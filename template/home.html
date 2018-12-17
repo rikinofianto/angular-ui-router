@@ -1,0 +1,19 @@
+<div>
+    <h1>{{ titlePage }}</h1>
+    <table border="1" style="padding:5px;margin: 5px;border-collapse: collapse;">
+        <tr>
+            <td>Title</td>
+            <td>Code</td>
+            <td>Url</td>
+            <td>Action</td>
+        </tr>
+        <tr ng-repeat="data in dummyData">
+            <td>{{ data.title }}</td>
+            <td>{{ data.code }}</td>
+            <td>{{ data.url }}</td>
+            <td>
+                <a ui-sref="print({id: data.code})">print</a>
+            </td>
+        </tr>
+    </table>
+</div>
